@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    position: absolute;
+    width: 100px;
+    top: 20vh;
+    left: calc(50vw - 50px);
+}
+
+div.square {
+    position: absolute;
+    background-color: black;
+    height: 5vh;
+    width: 5vh;
+    top: 0;
+    left: 0;
+    transition: 2s linear;
+}
+
+button:active~div.square {
+    transform: rotateZ(180deg); 
+    height: 20vh;
+    width: 20vh;
+    top: calc(100vh - 20vh);
+    left: calc(100vw - 20vh)
+}
